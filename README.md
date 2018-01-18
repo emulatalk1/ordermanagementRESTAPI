@@ -18,7 +18,7 @@ This is a simple RESTful web service using Spring MVC and Java. this web service
 
 Look at this architecture in terms of its interactions, as illustrated in the following diagram:
 
-![Image of architecture](https://ibb.co/nK0mxR)
+![Image of architecture](https://image.ibb.co/bsG4j6/rest_model.png)
 
 There is an important addition that is made to architecture: Domain objects are not sent directly to the user. Instead, they are wrapped in resources and the resources are provided to the user. This provides a level of indirection between the domain object and how we present the domain object to the user. For example, if we wish to present the user with a different name for a field in our domain model (say `orderName` instead of simply `name`), we can do so using a resource.
 
@@ -34,3 +34,20 @@ The following REST endpoints are available upon deployment of the order manageme
 | `POST` | `http://localhost:8080/order` | Creates a new order based on the payload contained in the request body | <ul><li>`201 Created` if order successfully created</li></ul> |
 | `PUT` | `http://localhost:8080/order/{id}` | Updated an existing order with the data contained in the request body | <ul><li>`200 OK` if order successfully updated</li><li>`404 Not Found` if order does not exist</li></ul> |
 | `DELETE` | `http://localhost:8080/order/{id}` | Deletes an existing order that corresponds to the supplied order ID | <ul><li>`203 No Content` if order successfully deleted</li><li>`404 Not Found` if order does not exist</li></ul> |
+
+## A plan of action to create app
+
+1. Implement the domain model:
+- [ ] Create the Order domain class.
+
+2. Implement the data source layer:
+- [ ] Create an in-memory database.
+- [ ] Implement the CRUD operations for the Order domain class.
+
+3. Implement the presentation layer:
+- [ ] Create the REST endpoints.
+- [ ] Create the Order resource.
+- [ ] Create assembler to construct an Order resource with proper HATEOAS links.
+
+4. Pull the application together:
+- [ ] Create the main method that will run the application.
