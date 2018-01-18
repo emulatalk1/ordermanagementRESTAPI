@@ -1,4 +1,4 @@
-package com.vnspectre.ordermanagement.models;
+package com.vnspectre.ordermanagement.domain;
 
 public class Order implements Identifiable{
 

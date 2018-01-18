@@ -41,8 +41,8 @@ The following REST endpoints are available upon deployment of the order manageme
    - [x] Create the Order domain class.
 
 2. Implement the data source layer:
-   - [ ] Create an in-memory database.
-   - [ ] Implement the CRUD operations for the Order domain class.
+   - [X] Create an in-memory database.
+   - [X] Implement the CRUD operations for the Order domain class.
 
 3. Implement the presentation layer:
    - [ ] Create the REST endpoints.
