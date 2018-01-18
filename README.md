@@ -38,7 +38,7 @@ The following REST endpoints are available upon deployment of the order manageme
 ## A plan of action to create app
 
 1. Implement the domain model:
-   - [ ] Create the Order domain class.
+   - [x] Create the Order domain class.
 
 2. Implement the data source layer:
    - [ ] Create an in-memory database.
