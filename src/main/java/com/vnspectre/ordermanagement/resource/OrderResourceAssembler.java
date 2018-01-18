@@ -4,7 +4,9 @@ import com.vnspectre.ordermanagement.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityLinks;
 import org.springframework.hateoas.Link;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderResourceAssembler extends ResourceAssembler<Order, OrderResource> {
 
     @Autowired

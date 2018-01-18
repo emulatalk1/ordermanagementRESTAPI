@@ -50,4 +50,4 @@ The following REST endpoints are available upon deployment of the order manageme
    - [X] Create assembler to construct an Order resource with proper HATEOAS links.
 
 4. Pull the application together:
-   - [ ] Create the main method that will run the application.
+   - [X] Create the main method that will run the application.
