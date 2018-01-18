@@ -10,7 +10,21 @@ This is a simple RESTful web service using Spring MVC and Java. this web service
 - How to provide RESTful Create, Read, Update, and Delete (CRUD) operations to change domain objects.
 - How to create unit, integration, and acceptance tests that exercise a REST API.
 
+## A 3-Tier application
+
+- Presentation layer (a series of REST endpoints).
+- Domain layer (domain model) .
+- Data source layer (a means of storing our domain objects, or a persistence layer).
+
+Look at this architecture in terms of its interactions, as illustrated in the following diagram:
+
+![Image of architecture](https://ibb.co/nK0mxR)
+
+There is an important addition that is made to architecture: Domain objects are not sent directly to the user. Instead, they are wrapped in resources and the resources are provided to the user. This provides a level of indirection between the domain object and how we present the domain object to the user. For example, if we wish to present the user with a different name for a field in our domain model (say `orderName` instead of simply `name`), we can do so using a resource.
+
+
 ## REST Endpoints
+
 The following REST endpoints are available upon deployment of the order management system:
 
 | HTTP Verb        | URL           | Description  | Status Codes |
