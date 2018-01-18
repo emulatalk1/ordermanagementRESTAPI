@@ -45,9 +45,9 @@ The following REST endpoints are available upon deployment of the order manageme
    - [X] Implement the CRUD operations for the Order domain class.
 
 3. Implement the presentation layer:
-   - [ ] Create the REST endpoints.
-   - [ ] Create the Order resource.
-   - [ ] Create assembler to construct an Order resource with proper HATEOAS links.
+   - [X] Create the REST endpoints.
+   - [X] Create the Order resource.
+   - [X] Create assembler to construct an Order resource with proper HATEOAS links.
 
 4. Pull the application together:
    - [ ] Create the main method that will run the application.
